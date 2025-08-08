@@ -12,13 +12,15 @@ abstract class AbstractAction
 {
     abstract protected function invokeHook(
         ServerRequest $request,
-        Response $response
+        Response $response,
+        array $args = []
     ): ResponseInterface;
 
     public function __invoke(
         ServerRequest $request,
-        Response $response
+        Response $response,
+        array $args = []
     ): ResponseInterface {
-        return $this->invokeHook($request, $response);
+        return $this->invokeHook($request, $response, $args);
     }
 }
