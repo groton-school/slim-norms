@@ -18,4 +18,4 @@ When developing Slim Framework-related packages, use...
 - Implement `DependenciesInterface` to script injecting package-related dependencies;
 - Implement `RouteBuilderInterface` to define package-related routes;
 
-See [groton-school/slim-spa-oauth2-client](https://github.com/groton-school/slim-spa-oauth2-client) for sample usage.
+See [groton-school/slim-gae-shim](https://github.com/groton-school/slim-gae-shim) for sample usage.
