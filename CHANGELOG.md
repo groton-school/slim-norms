@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.0](https://github.com/groton-school/slim-norms/compare/v1.0.1...v2.0.0) (2025-09-09)
+
+### ⚠ BREAKING CHANGES
+
+* Support constructor injection by making static members dynamic ([03a878](https://github.com/groton-school/slim-norms/commit/03a8788d4faaeafb875932448cf97c9d6f530623))
+
+
+---
+
 ## [1.0.1](https://github.com/groton-school/slim-norms/compare/v1.0.0...v1.0.1) (2025-08-08)
 
 ### Bug Fixes
