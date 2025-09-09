@@ -9,5 +9,5 @@ use Slim\Interfaces\RouteGroupInterface;
 
 interface RouteBuilderInterface
 {
-    public static function define(App $app): RouteGroupInterface;
+    public function define(App $app): RouteGroupInterface;
 }
