@@ -8,5 +8,5 @@ use DI\ContainerBuilder;
 
 interface DependenciesInterface
 {
-    public static function inject(ContainerBuilder $containerBuilder): void;
+    public function inject(ContainerBuilder $containerBuilder): void;
 }
