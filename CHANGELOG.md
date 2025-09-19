@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.1.0](https://github.com/groton-school/slim-norms/compare/v2.0.0...v2.1.0) (2025-09-19)
+
+### Features
+
+* Optional inner middleware inserted into routes ([bf52e5](https://github.com/groton-school/slim-norms/commit/bf52e5c975ca577006b7f44cafcdd14464c1b9b3))
+
+
+---
+
 ## [2.0.0](https://github.com/groton-school/slim-norms/compare/v1.0.1...v2.0.0) (2025-09-09)
 
 ### ⚠ BREAKING CHANGES
