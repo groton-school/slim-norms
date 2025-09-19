@@ -10,5 +10,8 @@ use Slim\Interfaces\RouteGroupInterface;
 
 interface RouteBuilderInterface
 {
-    public function define(App $app, ?MiddlewareInterface ...$innerMiddleware): RouteGroupInterface;
+    public function define(
+        App $app,
+        MiddlewareInterface|string|callable ...$innerMiddleware
+    ): RouteGroupInterface;
 }
