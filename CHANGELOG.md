@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.2.0](https://github.com/groton-school/slim-norms/compare/v2.1.1...v2.2.0) (2025-10-15)
+
+### Features
+
+* Rename cumbersome, opaque `invokeHook()` to transparent `action()` ([9e814b](https://github.com/groton-school/slim-norms/commit/9e814baf305e73e670d0e9bf8bfc3adf26d0d468))
+
+
+---
+
 ## [2.1.1](https://github.com/groton-school/slim-norms/compare/v2.1.0...v2.1.1) (2025-09-19)
 
 ### Bug Fixes
