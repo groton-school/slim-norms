@@ -28,5 +28,16 @@
   "require-dev": {
     "friendsofphp/php-cs-fixer": "*",
     "marcocesarato/php-conventional-changelog": "*"
+  },
+  "scripts": {
+    "release": [
+      "conventional-changelog -c",
+      "git push",
+      "git push --tags",
+      "git checkout main",
+      "git merge dev",
+      "git push",
+      "git checkout dev"
+    ]
   }
 }
