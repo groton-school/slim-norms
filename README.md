@@ -14,7 +14,7 @@ composer require groton-school/slim-norms
 
 When developing Slim Framework-related packages, use...
 
-- Extend `AbstractAction` to easily create invokable actions.
+- Extend `AbstractAction` to and override its `action()` method to easily create invokable actions.
 - Implement `DependenciesInterface` to script injecting package-related dependencies;
 - Implement `RouteBuilderInterface` to define package-related routes;
 

@@ -10,17 +10,36 @@ use Slim\Http\ServerRequest;
 
 abstract class AbstractAction
 {
-    abstract protected function invokeHook(
+    protected function action(
         ServerRequest $request,
         Response $response,
         array $args = []
-    ): ResponseInterface;
+    ): ResponseInterface {
+        // TODO delete AbstractAction::action() @ v3.0.0
+        return $this->invokeHook($request, $response, $args);
+    }
+
+    /**
+     * @deprecated 2.2.0 Override AbstractAction::action() instead
+     * @see AbstractAction::action()
+     * @param ServerRequest $request
+     * @param Response $response
+     * @param array $args
+     * @return ResponseInterface
+     */
+    protected function invokeHook(
+        ServerRequest $request,
+        Response $response,
+        array $args = []
+    ): ResponseInterface {
+        return $response;
+    }
 
     public function __invoke(
         ServerRequest $request,
         Response $response,
         array $args = []
     ): ResponseInterface {
-        return $this->invokeHook($request, $response, $args);
+        return $this->action($request, $response, $args);
     }
 }
